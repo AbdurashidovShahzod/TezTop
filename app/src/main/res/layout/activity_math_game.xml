@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mathe_shape"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="uz.example.pdp.MathGameActivity">
+
+    <LinearLayout
+        android:id="@+id/aj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/ic_clock" />
+
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/bungee"
+            android:text=""
+            android:textColor="#E8A801"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/imgSuc"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_trophy" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/bungee"
+            android:text="0"
+            android:textColor="#E8A801"
+            android:textSize="23sp" />
+
+        <ImageView
+            android:id="@+id/imgNoSuc"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_dislike" />
+
+        <TextView
+            android:id="@+id/noCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bungee"
+            android:text="0"
+            android:textColor="#E8A801"
+            android:textSize="23sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:gravity="center"
+        android:text="Tez top⏳"
+        android:textColor="@color/white"
+        android:textSize="28sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_shape"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/number1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:gravity="center"
+                android:text="34"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_shape"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/amal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_shape"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/number2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_shape"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/result"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:gravity="center"
+                android:hint="Result"
+                android:inputType="numberSigned"
+                android:textColorHint="@color/white"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="bottom"
+            android:padding="3dp">
+
+            <com.sackcentury.shinebuttonlib.ShineButton
+                android:id="@+id/imageButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:clickable="false"
+                app:allow_random_color="false"
+                app:big_shine_color="#FF9800"
+                app:btn_color="#BEC4C0"
+                app:btn_fill_color="#EC407A"
+                app:click_animation_duration="200"
+                app:enable_flashing="true"
+                app:shine_animation_duration="1500"
+                app:shine_count="8"
+                app:shine_distance_multiple="2"
+                app:shine_turn_angle="20"
+                app:siShape="@raw/star"
+                app:small_shine_color="#CC9999"
+                app:small_shine_offset_angle="20">
+
+
+            </com.sackcentury.shinebuttonlib.ShineButton>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
